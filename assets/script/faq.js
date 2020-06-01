@@ -1,7 +1,9 @@
 $(document).ready(function() {
     $(function () { 
         $('.faqList').click(function () { 
-            $(this).children('.answer').toggleClass('active').slideToggle();
+            $('.answer').removeClass('active');
+            $(this).children('.answer').slideToggle().addClass('active');
         }); 
     });
   });
+
